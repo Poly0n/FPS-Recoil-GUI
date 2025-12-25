@@ -19,7 +19,7 @@ button. You can adjust it with the + or - buttons and reset to fully reset your 
 2. Compile main.cpp using a C++ compiler of your choice
 
 ```bash
-g++ main.cpp -o name
+g++ main.cpp -o name.exe -mwindows -static-libgcc -static-libstdc++
 ```
 
 3. Execute the .exe with the name you compiled it as from the cpp file. (It is recommended to run as Administrator if possible)
