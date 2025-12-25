@@ -195,7 +195,7 @@ LRESULT CALLBACK WndProc(
 		TextOut(hdc, 110, 170, statusText, _tcslen(statusText));
 
 		TCHAR amountText[50];
-		_stprintf_s(amountText, _T("Current Recoil: %d"), g_recoilAmount);
+		wsprintf(amountText, TEXT("Current Recoil: %d"), g_recoilAmount);
 		TextOut(hdc, 50, 200, amountText, _tcslen(amountText));
 
 		TCHAR instructions[] = _T("Set recoil amount, then click START");
